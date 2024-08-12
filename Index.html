@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMP804 Web Security - Assignment 3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .task {
+            margin-bottom: 40px;
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        
+        /* Task 1 Styles */
+        .task1-header {
+            color: darkblue;
+            border: 2px solid lightyellow;
+            background-color: lightblue;
+            padding: 10px;
+        }
+
+        /* Task 2 Styles */
+        .task2-table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .task2-table th, .task2-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .task2-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .task2-table tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+        .task2-table th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        /* Task 3 Styles */
+        .task3-table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .task3-table th, .task3-table td {
+            border: 2px solid #4CAF50;
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+        .task3-table th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .task3-table img {
+            width: 200px;
+            height: auto;
+        }
+
+        /* Task 4 Styles */
+        .task4-buttons {
+            margin-bottom: 10px;
+        }
+        .task4-buttons button {
+            padding: 10px 20px;
+            margin-right: 10px;
+        }
+        .task4-buttons button.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+        #task4-message, #task4-image {
+            margin-top: 10px;
+        }
+        #task4-image img {
+            max-width: 300px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>COMP804 Web Security - Assignment 3</h1>
+
+    <div class="task">
+        <h2>Task 1: CSS Headers</h2>
+        <div class="task1-header">
+            <h3>Student number: 8730611 and Student name: Fan Kiu (Frankie) Mak</h3>
+            <h3>Subject code: COMP804 and subject title: Web Security</h3>
+            <h3>Assignment number: 3 and assignment due date Monday 19 Aug 2024</h3>
+        </div>
+    </div>
+
+    <div class="task">
+        <h2>Task 2: CSS Styled Table</h2>
+        <table class="task2-table">
+            <tr>
+                <th>Activity</th>
+                <th>Date</th>
+            </tr>
+            <tr>
+                <td>First day to enrol for re-enrolling (continuing students)</td>
+                <td>18 Nov 2024</td>
+            </tr>
+            <tr>
+                <td>Orientation</td>
+                <td>24 Feb - 27 Feb 2025<br>
+                    Further information is available on<br>
+                    <a href="https://www.uow.edu.au/student/dates/#d.en.186577" target="_blank">Get Started</a></td>
+            </tr>
+            <tr>
+                <td>Lectures Commence (weeks 1-7)</td>
+                <td>03 Mar - 18 Apr 2025</td>
+            </tr>
+            <tr>
+                <td>Last day to enrol / add subjects yourself</td>
+                <td>14 Mar 2025</td>
+            </tr>
+            <tr>
+                <td>Last day to enrol / add subjects with Head of Students approval</td>
+                <td>21 Mar 2025</td>
+            </tr>
+            <tr>
+                <td>CENSUS DATE<br>
+                    • Fees due<br>
+                    • Last day to withdraw from subject/s without paying for them<br>
+                    • HECS / FEE HELP debt reporting date<br>
+                    • Last day to change HECS / FEE HELP billing option<br>
+                    <a href="https://uowedu.service-now.com/kb?id=kb_article_view&sysparm_article=KB0012659" target="_blank">Learn more about Census date ></a></td>
+                <td>31 Mar 2025</td>
+            </tr>
+            <tr>
+                <td>Student Services and Amenities Fees Due</td>
+                <td>01 Apr 2025</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="task">
+        <h2>Task 3: HTML & CSS Table of Web Attacks</h2>
+        <table class="task3-table">
+            <tr>
+                <th>Name</th>
+                <th>Web Attacks</th>
+            </tr>
+            <tr>
+                <td>
+                    Cross-Site Scripting
+                    <img src="xss-persistent.gif" alt="Cross-Site Scripting">
+                    <br>
+                    Source: <a href="https://www.veracode.com/security/xss" target="_blank">Veracode</a>
+                </td>
+                <td>
+                    Cross-site scripting (XSS) attacks trick a browser into delivering malicious client-side scripts to the victim's browser, which will automatically execute it once received. This malware can:
+                    <ul>
+                        <li>Exfiltrate data</li>
+                        <li>Install malware</li>
+                        <li>Redirect the user to a spoofed site</li>
+                    </ul>
+                    <a href="https://www.tripwire.com/state-of-security/most-common-website-security-attacks-and-how-to-protect-yourself" target="_blank">Learn more about XSS attacks</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Fuzzing
+                    <br>
+                    <img src="fuzz testing.png" alt="Fuzzing">
+                    <br>
+                    Source: <a href="https://www.beyondsecurity.com/resources/guides/fuzzing-in-cybersecurity" target="_blank">beyondsecurity.com</a>
+                </td>
+                <td>
+                    Fuzz testing is a type of web attack that works by initially inputting a large amount of random data (fuzz) into an application to get it to crash. The next step is using a fuzzer software tool to identify the weak spots. If there are any loopholes in the target's security, the attacker can further exploit it. 
+                    <a href="https://www.beyondsecurity.com/resources/guides/fuzzing-in-cybersecurity" target="_blank">Learn more about Fuzzing attacks</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    SQL Injection Attacks
+                    <br>>
+                    <img src="SQL injection attack.png" alt="SQL Injection Attacks">
+                    <br>
+                    Source: <a href="https://spanning.com/blog/sql-injection-attacks-web-based-application-security-part-4/" target="_blank">Spanning.com</a>
+                </td>
+                <td>
+                    A SQL Injection attack involves inserting or “injecting” a SQL query via the input data from the client to the application. A successful attack allows an attacker to manipulate the SQL queries that an application makes to its database.
+                    <a href="https://brightsec.com/blog/sql-injection-attack/" target="_blank">Learn more about SQL Injection Attacks</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Drive-By Download
+                    <img src="Drive-By Download attack.png" alt="Drive-By Download">
+                    <br>
+                    Source: <a href="https://www.wallarm.com/what/drive-by-attack" target="_blank">Wallarm.com</a>
+                </td>
+                <td>
+                    A drive-by download attack is a cyber threat technique that allows threat actors to install malicious programs onto devices without user-initiated downloads. Unlike many other cyberattacks that rely on human error for network access, drive-by download attacks exploit security vulnerabilities within an operating system so that user devices become infected by simply visiting a compromised website.
+                    <a href="https://www.blackberry.com/us/en/solutions/endpoint-security/ransomware-protection/drive-by-download-attack" target="_blank">Learn more about Drive-By Download attacks</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    DDoS (Distributed Denial-of-Service)
+                    <img src="ddos-attack.png" alt="DDoS (Distributed Denial-of-Service)">
+                    <br>
+                    Source: <a href="https://www.onelogin.com/learn/ddos-attack" target="_blank">onelogin.com</a>
+                </td>
+                <td>
+                    A distributed denial-of-service (DDoS) attack occurs when a group of systems flood a server with fraudulent traffic. Eventually, the server is overwhelmed, causing it to either go down, or become unresponsive, even to legitimate requests.
+                    <a href="https://www.onelogin.com/learn/ddos-attack " target="_blank">Learn more about DDoS attacks</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Using Components with Known Vulnerabilities
+                    <img src="Using Components with Known Vulnerabilities.png" alt="Using Components with Known Vulnerabilities">
+                    <br>
+                    Source: <a href="https://www.wallarm.com/what/a9-using-components-with-known-vulnerabilities-2017-owasp " target="_blank">Wallarm.com</a>
+                </td>
+                <td>
+                    Vulnerability or exploit hidden in a downstream dependency or left over from an Open-Source code repository could lead to compromise in the final site. 
+                    <a href="https://www.wallarm.com/what/a9-using-components-with-known-vulnerabilities-2017-owasp " target="_blank">Learn more about Using Components with Known Vulnerabilities attacks</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    MiTM (Man-in-the-Middle)
+                    <img src="man-in-the-middle.png" alt="MiTM (Man-in-the-Middle)">
+                    <br>
+                    Source: <a href="https://www.imperva.com/learn/application-security/man-in-the-middle-attack-mitm/ " target="_blank">imperva.com</a>
+                </td>
+                <td>
+                    A man in the middle (MITM) attack is a general term for when a perpetrator positions himself in a conversation between a user and an application—either to eavesdrop or to impersonate one of the parties, making it appear as if a normal exchange of information is underway.
+                    <a href="https://www.imperva.com/learn/application-security/man-in-the-middle-attack-mitm/" target="_blank">Learn more about MiTM (Man-in-the-Middle) attacks</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Directory Traversal
+                    <img src="Directory traversal.png" alt="Directory Traversal">
+                    <br>
+                    Source: <a href="https://learn.snyk.io/lesson/directory-traversal/" target="_blank">Learn.snyk.io</a>
+                </td>
+                <td>
+                    A directory traversal attack aims to access files and directories that are stored outside the intended folder. By manipulating files with "dot-dot-slash (../)" sequences and its variations, or by using absolute file paths, it may be possible to access arbitrary files and directories stored on the filesystem; including application source code, configuration, and other critical system files.
+                    <a href="https://learn.snyk.io/lesson/directory-traversal/ " target="_blank">Learn more about Directory Traversal attacks</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Password-Based Attacks
+                    <img src="Password-Based Attacks.png" alt="Password-Based Attacks">
+                    <br>
+                    Source: <a href="https://secureb4.io/" target="_blank">secureb4.io</a>
+                </td>
+                <td>
+                    A password attack is any attempt to exploit a vulnerability in user authorization within a digital system. And just as there are a near-infinite number of possible passwords, there are many different methods that a cybercriminal may employ to maliciously authenticate into a secure account.
+                    <a href="https://www.ontinue.com/password-attack/#:~:text=A%20password%20attack%20is%20any,authenticate%20into%20a%20secure%20account" target="_blank">Learn more about Password-Based Attacks</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Broken Authentication
+                    <img src="Broken Authentication.png" alt="Broken Authentication">
+                    <br>
+                    Source: <a href="https://secinfos.com/understanding-broken-authentication-and-its-implications-for-cybersecurity/" target="_blank">Secinfos.com</a>
+                </td>
+                <td>
+                    Broken authentication and session management attacks are a serious threat to the security of online systems. These types of attacks exploit vulnerabilities in the authentication and session management mechanisms used by web applications to identify and track users. When these mechanisms are not properly implemented or are mis-configured, attackers can gain unauthorized access to sensitive data and systems, such as user credentials, personal information, and financial data.
+                    <a href="https://secinfos.com/understanding-broken-authentication-and-its-implications-for-cybersecurity/" target="_blank">Learn more about Broken Authentication</a>
+                </td>
+            </tr>
+            <!-- Add the remaining 9 rows here, following the same structure -->
+        </table>
+    </div>
+
+    <div class="task">
+        <h2>Task 4: JavaScript with Buttons</h2>
+        <div class="task4-buttons">
+            <button onclick="showAnimal('Cat')">Cat</button>
+            <button onclick="showAnimal('Dog')">Dog</button>
+            <button onclick="showAnimal('Frog')">Frog</button>
+        </div>
+        <input type="text" id="task4-input" readonly>
+        <div id="task4-message"></div>
+        <div id="task4-image"></div>
+    </div>
+
+    <div class="task">
+        <h2>Task 5: GitHub Repository Report</h2>
+        <p>Please refer to the <a href="github-report.pdf" target="_blank">GitHub Repository Report</a> for details of Task 1 - 4 instructions on uploading the source code to a GitHub repository. </p>
+    </div>
+
+    <script>
+        function showAnimal(animal) {
+            // Reset all buttons
+            document.querySelectorAll('.task4-buttons button').forEach(btn => btn.classList.remove('active'));
+            
+            // Highlight clicked button
+            event.target.classList.add('active');
+            
+            // Update input field
+            document.getElementById('task4-input').value = `User clicks ${animal}`;
+            
+            // Update message
+            document.getElementById('task4-message').textContent = `${animal} is clicked`;
+            
+            // Update image
+            const imageElement = document.createElement('img');
+            imageElement.src = `${animal.toLowerCase()}.jpg`;
+            imageElement.alt = animal;
+            const imageContainer = document.getElementById('task4-image');
+            imageContainer.innerHTML = '';
+            imageContainer.appendChild(imageElement);
+        }
+    </script>
+</body>
+</html>
